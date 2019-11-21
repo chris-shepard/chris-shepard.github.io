@@ -4,7 +4,28 @@ html {
     --shadow: #ccc;
 }
 
-header>h1 {
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header>div:first-of-type {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header>div>div:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+}
+
+header>div>div:first-of-type{
+    width:3rem;
+}
+header>div>h1 {
     margin: 0 auto;
 }
 /**************<nav>***********/
@@ -74,10 +95,18 @@ a.a-button {
     border-radius: 5px;
     color: var(--primary);
     margin-right: .5rem;
+    margin: .5rem;
+    height: 1.5rem;
+    width: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 a.a-button > * {
     margin: 1rem 5px;
+    height: 1rem;
 }
 
 a.a-button:hover {
@@ -96,17 +125,18 @@ a.a-button:hover {
 .find-me {
     padding: 0 0;
     border: solid 2px var(--primary);
-    width: 20rem;
-    height: 4rem;
     margin: 3rem 0;
-    margin-left: 2rem;
     display: flex;
     align-items: center;
     border-radius: .5rem;
 }
 
 .find-me>.content {
-    padding-left: .5rem;
+    max-width: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -1rem;
 }
 
 .circle {
@@ -118,6 +148,6 @@ a.a-button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -.3rem;
-    margin-left: -2rem;
+    margin-top: -8rem;
+    margin-left: -1rem;
 }
