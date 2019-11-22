@@ -120,6 +120,8 @@ a.a-button:hover {
 .find-me-wrapper {
     display: flex;
     justify-content: center;
+    margin-top: -6.2rem;
+    z-index: 2;
 }
 
 .find-me {
@@ -129,6 +131,7 @@ a.a-button:hover {
     display: flex;
     align-items: center;
     border-radius: .5rem;
+    background: white;
 }
 
 .find-me>.content {
@@ -136,10 +139,14 @@ a.a-button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: -1rem;
+}
+.circle-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .circle {
+    display:flex;
     background: var(--primary);
     color: white;
     border-radius: 50%;
@@ -148,6 +155,9 @@ a.a-button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -8rem;
-    margin-left: -1rem;
+    margin-left:-13rem;
+}
+
+.circle>span {
+    padding-bottom: 1rem;
 }
